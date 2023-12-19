@@ -1,4 +1,4 @@
-{
+  {
     "builds": [
       {
         "src": "index.js",
@@ -11,19 +11,39 @@
     ],
     "routes": [
       {
-        "src": "/users",
+        "src": "/sign-in",
+        "dest": "index.js"
+      },
+      {
+         "src": "/admission",
+        "dest": "index.js"
+      },
+        {
+         "src": "/edit",
+        "dest": "index.js"
+      },
+        {
+         "src": "/check",
+        "dest": "index.js"
+      },
+        {
+         "src": "/register",
+        "dest": "index.js"
+      },
+      {
+         "src": "/sign-up",
         "dest": "index.js"
       },
       {
          "src": "/edit",
         "dest": "index.js"
       },
-      {
-         "src": "/check",
+        {
+         "src": "/users",
         "dest": "index.js"
       },
-      {
-         "src": "/register",
+        {
+         "src": "/contact",
         "dest": "index.js"
       },
       {
