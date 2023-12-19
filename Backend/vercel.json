@@ -1,0 +1,38 @@
+{
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "build/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/users",
+        "dest": "index.js"
+      },
+      {
+         "src": "/edit",
+        "dest": "index.js"
+      },
+      {
+         "src": "/check",
+        "dest": "index.js"
+      },
+      {
+         "src": "/register",
+        "dest": "index.js"
+      },
+      {
+        "src": "/",
+        "dest": "build/index.html"
+      },
+      {
+        "src": "/(.+)",
+        "dest": "build/$1"
+      }
+    ]
+  }
