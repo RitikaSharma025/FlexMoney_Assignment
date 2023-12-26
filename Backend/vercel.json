@@ -47,6 +47,10 @@
         "dest": "index.js"
       },
       {
+         "src": "/delete",
+        "dest": "index.js"
+      },
+      {
         "src": "/",
         "dest": "build/index.html"
       },
